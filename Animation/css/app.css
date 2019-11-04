@@ -1,0 +1,217 @@
+
+h2 {
+font-size: 25px;
+font-family: sans-serif;
+text-align: center;
+display: block;
+font-family: "Roboto";
+padding-left: 60vh;
+padding-right: 60vh;
+
+}
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:300");
+
+body {
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 25px;
+  padding-top: 40vh;
+  height: 100vh;
+  overflow: hidden;
+  backface-visibility: hidden;
+  perspective: 1000;
+  transform: translate3d(0, 0, 0);
+}
+
+div {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+div:first-of-type {
+  /* For increasing performance
+                       ID/Class should've been used.
+                       For a small demo
+                       it's okaish for now */
+  animation: showup 10s infinite;
+
+}
+
+
+
+div:last-of-type span {
+  margin-left: -355px;
+  animation: slidein 10s infinite;
+}
+
+@keyframes showup {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes slidein {
+  0% {
+    margin-left: -800px;
+  }
+  20% {
+    margin-left: -800px;
+  }
+  35% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: 0px;
+  }
+}
+
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    width: 0px;
+  }
+  20% {
+    opacity: 1;
+    width: 0px;
+  }
+  30% {
+    width: 100%;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    width: 100%;
+  }
+}
+
+.span {
+  text-align: block
+}
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
+
+html, body, .wrap {
+	height: 100%;
+}
+
+body {
+	background: black;
+	overflow: hidden;
+	color: white;
+	font-family: Open sans;
+
+}
+
+.wrap {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+h1 {
+	position: relative;
+	perspective: 500px;
+	top: 50%;
+	padding: 0 20px;
+	transform: translateY(-50%);
+	font-weight: 300;
+	span {
+		opacity: 0;
+	}
+}
+
+.Iam {
+  padding: 2em 5em;
+  font: normal 40px/50px Montserrat, sans-serif;
+  color: #999;
+}
+.Iam p {
+  height: 50px;
+  float: left;
+  margin-right: 0.3em;
+}
+.Iam b {
+  float: left;
+  overflow: hidden;
+  position: relative;
+  height: 50px;
+  top: 40px;
+}
+.Iam .innerIam {
+  display: inline-block;
+  color: white;
+  position: relative;
+  white-space: nowrap;
+  top: 0;
+  left: 0;
+
+
+/*animation*/
+-webkit-animation:move 8s;
+   -moz-animation:move 8s;
+    -ms-animation:move 8s;
+     -o-animation:move 8s;
+        animation:move 8s;
+/*animation-iteration-count*/
+-webkit-animation-iteration-count:infinite;
+   -moz-animation-iteration-count:infinite;
+    -ms-animation-iteration-count:infinite;
+     -o-animation-iteration-count:infinite;
+        animation-iteration-count:infinite;
+/*animation-delay*/
+-webkit-animation-delay:5s;
+   -moz-animation-delay:5s;
+    -ms-animation-delay:5s;
+     -o-animation-delay:5s;
+        animation-delay:5s;
+}
+@keyframes move{
+0%  { top: 0px; }
+20% { top: -50px; }
+40% { top: -100px; }
+60% { top: -150px; }
+80% { top: -200px; }
+}
+
+@-webkit-keyframes move {
+    0%  { top: 0px; }
+    20% { top: -50px; }
+    40% { top: -100px; }
+    60% { top: -150px; }
+    80% { top: -200px; }
+}
+@-moz-keyframes move {
+    0%  { top: 0px; }
+    20% { top: -50px; }
+    40% { top: -100px; }
+    60% { top: -150px; }
+    80% { top: -200px; }
+}
+@-o-keyframes move {
+    0%  { top: 0px; }
+    20% { top: -50px; }
+    40% { top: -100px; }
+    60% { top: -150px; }
+    80% { top: -200px; }
+}
+@keyframes move {
+    0%  { top: 0px; }
+    20% { top: -50px; }
+    40% { top: -100px; }
+    60% { top: -150px; }
+    80% { top: -200px; }
+}
